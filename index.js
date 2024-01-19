@@ -1,10 +1,6 @@
-const { faker } = require('@faker-js/faker');
+const { fakerTH } = require('@faker-js/faker');
+const pdfTemplete = require('./pdf_template');
 // or, if desiring a different locale
 // const { fakerDE: faker } = require('@faker-js/faker');
 
-const randomName = faker.person.fullName(); // Rowan Nikolaus
-const randomEmail = faker.internet.email(); // Kassandra.Haley@erich.biz
-
-console.log("Hello world.");
-console.log(randomName);
-console.log(randomEmail);
+pdfTemplete.pdfDemo1();
