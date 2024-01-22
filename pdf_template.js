@@ -18,11 +18,10 @@ function pdfDemo1() {
 
     // Pipe the PDF content to a writable stream (e.g., a file)
     const stream = fs.createWriteStream(`./asset/PDF/demoPDF-${docId}.pdf`);
-    doc.font('./asset/font/THSarabunNew.ttf')
+    doc.font('./asset/font/IBMPlexSansThai-Regular.ttf')
         .fontSize(16)
         .text('เทสภาษาไทย');
-
-    doc.font('./asset/font/THSarabunNew Bold.ttf')
+    doc.font('./asset/font/IBMPlexSansThai-Bold.ttf')
         .fontSize(16)
         .text(`${fullName}`);
 
